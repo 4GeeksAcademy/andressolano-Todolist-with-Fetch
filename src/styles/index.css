@@ -9,3 +9,37 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+body{
+    margin-top: 100px;
+    margin-left: auto;
+    font-family:'Courier New', Courier, monospace;
+    
+    
+    
+}
+ul li {
+    border: 1px solid rgb(202, 197, 197);
+    list-style:none; 
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.1),
+    5px 5px 0 rgba(0, 0, 0, 0.05),
+    10px 10px 0 rgba(0, 0, 0, 0.03);
+    
+    
+}
+h1 {
+    text-align: center;
+    font-size: 80px;
+    color:rgb(230, 115, 115);
+}
+
+input{ 
+    border: none; 
+    width: 100%;
+}
+
