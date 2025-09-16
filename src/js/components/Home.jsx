@@ -17,17 +17,22 @@ const Home = () => {
 						onChange={(e) => setInputValue(e.target.value)}
 						value={inputValue}
 						onKeyPress={(e) => {
-							if (e.key === "Enter") {
-								setTodos(todos.concat(inputValue));
+							if (e.key === "Enter" && inputValue.trim() !== "") {
+								setTodos(todos.concat(inputValue.trim()));
 								setInputValue("");
 							}
 						}}
 
+
 						placeholder="What needs to be done?"></input>
 				</li>
 
+				{todos.length === 0 && (
+					<li className="empty-message">Empty list</li>
+				)}
+
 				{todos.map((item, index) => (
-					<li>
+					<li key={index}>
 						{item}{""}
 						<i
 							className="fa-solid fa-xmark"

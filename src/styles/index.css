@@ -43,3 +43,11 @@ input{
     width: 100%;
 }
 
+li .fa-xmark {
+  visibility: hidden;
+}
+
+li:hover .fa-xmark {
+  visibility: visible;
+}
+
